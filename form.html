@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Форми</title>
+</head>
+<body>
+<header>
+    <style>
+  nav {
+    margin-top: 50px;
+  }
+
+  label {
+    display: block;
+    margin-top: 20px;
+  }
+
+  button {
+    display: block;
+    margin-top: 20px;
+    }
+</style>
+<h1>Заповніть форму</h1>
+</header>
+<main>
+<nav>
+<a href="index.html">Головна</a>
+<a href="city-Lviv.html">Місто 1</a>
+<a href="city-Kyiv.html">Місто 2</a>
+<a href="city-Ternopil.html">Місто 3</a>
+</nav>
+</main>
+<footer>
+<form>
+ <label for="name">Ім'я</label>
+ <input type="text" id="name" name="name" require>
+ <label for="city">Місто</label>
+ <select id="city" name="city" required>
+  <option value="" disabled selected>Оберіть місто</option>
+  <option value="lviv">Львів</option>
+  <option value="kyiv">Київ</option>
+  <option value="ternopil">Тернопіль</option>
+ </select>
+
+ <label for="offer-type">Тип пропозиції</label>
+ <select id="offer-type" name="offer_type" required>
+  <option value="" disabled selected>Оберіть тип пропозиції</option>
+  <option value="tourist">Туристична</option>
+  <option value="business">Ділова</option>
+  <option value="living">Проживати</option>
+ </select>
+ <label for="reason">Чому варто відвідати це місто</label>
+ <textarea id="reason" name="reason" required></textarea>
+ <button type="submit">Надіслати</button>
+</form>
+<img
+    src="images/trudec.png"
+    alt="трудовики"
+>
+</footer>
+</body>
+</html>
